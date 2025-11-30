@@ -1,0 +1,70 @@
+.draggable {
+    background-color: rgb(161, 55, 55);
+    border: 0.35rem solid #fc030300;
+    cursor: grab;
+    padding: 10px;
+    margin: 5px 0;
+    color: white;
+    user-select: none;
+} 
+
+.kitap-area {
+    min-height: 150px;
+    min-width: 85px;
+    border-radius: 10px;
+    display: flex;
+    margin-right: 40px;
+    padding-left: 15px; 
+    background-color: rgba(148, 148, 148, 0.144);
+}
+
+.locked {
+    cursor: not-allowed;
+    opacity: 0.9;
+    background-color: rgba(0, 1, 82, 0.781);
+    border: 0.35rem solid #fc030300;
+}
+
+
+@media (max-width: 750px) {
+    
+    .soru {
+        flex-direction: column; 
+        align-items: center; 
+        margin: 0;
+        padding-inline: 0;
+    }
+
+    .soru .actions {
+        align-items: center; 
+        
+    }
+    .sortable{
+        margin-right: 0;
+        gap: 1px;
+    }
+    .etiket{
+        font-size: small;
+        height: 5rem;
+        width: 1.8rem;
+        padding: 10px;
+    }
+    .result {
+        text-align: left; 
+    }
+    #baslik{
+        font-size: larger;
+        text-align: justify;
+        margin-bottom: 2.5rem;  
+    }
+    .kitap-area {
+        margin-inline: auto;
+        min-height: 80px;
+        min-width: 40px;
+        width: 65px;
+        border-radius: 10px;
+        display: flex;
+        padding-right: 17px; 
+    }
+}
+

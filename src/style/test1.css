@@ -1,0 +1,59 @@
+.soru{
+    flex-direction: column;
+    align-items: center;
+}
+.sortable li {
+    border: 0.35rem solid #fc030300;
+}
+
+.bookfull{
+    background-color: rgb(129, 127, 127);
+}
+.bookfull:hover{
+    opacity: 0.85;
+}
+.true{
+    background-color: green;
+    opacity: 1;
+}
+.false{
+    background-color: red;
+    opacity: 1;
+}
+
+@media (max-width: 576px) {
+    .sortable{
+        gap: 1px;
+        margin: 0;
+    }
+    .sortable li {
+        border: 0.2rem solid #fc030300;
+    }
+    .sorualani h2{
+        margin-inline: 2rem;
+    }
+    .soru {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 1rem;
+    }
+    .soru .actions {
+        align-items: center; 
+        
+    }
+    .etiket{
+        width: 2.4rem;
+        height: 5.5rem;
+        font-size: small;
+    }
+    .result {
+        text-align: left; 
+    }
+    #baslik{
+        font-size: 1.2em;
+        text-align: justify;
+        margin-bottom: 2.5rem;
+    }
+    
+}
+

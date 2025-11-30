@@ -1,0 +1,100 @@
+html, body{
+    margin-top: 0px;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+.sorualani{
+    margin-top: 0;
+    width: 100%;
+    max-width: 750px;
+}
+.sorualani h2{
+    color: #3c3c3c;
+    font-family: serif;
+    font-size: larger;
+    margin-bottom: 0.5rem;
+}
+.sortable {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 3px; 
+    align-items: flex-end;
+    margin-right: 10px;
+}   
+
+.sortable li {
+    padding: 1px;
+    cursor: pointer;
+    border-style: outset;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.book {
+    margin-bottom: auto; 
+    text-align: center;
+    display: none;
+}
+.etiket {
+    background-color: white;
+    color:black;
+    height: 6.7rem;
+    width: 2.7rem;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: auto;
+    font-size: medium;
+    font-family:sans-serif;
+    font-weight:400;
+}
+.soru {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 10px;
+    border: 1px solid #cdc;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
+
+}
+
+.soru ul {
+    flex: 1;
+}
+
+.soru .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.result {
+    font-size: medium;
+    font-weight: bold;
+    text-align: right;
+    font-family: sans-serif;
+}
+
+#baslik {
+    font-size: x-large;
+    text-align: justify;
+    font-family: sans-serif;
+}
+#description{
+    font-size: larger;
+    text-align: justify;
+    font-weight: 400;
+    font-family: sans-serif;
+}
