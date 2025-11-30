@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LC Classification System Test 3</title>
+    
+    <link rel="stylesheet" href="./src/style/customelements.css">
+    <link rel="stylesheet" href="./src/style/shared.css">
+    <link rel="stylesheet" href="./src/style/test3.css">
+    <link rel="stylesheet" href="./src/style/navigation.css">
+    <script>
+      var _paq = (window._paq = window._paq || []);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "//apps.library.bilkent.edu.tr/matomo/";
+        _paq.push(["setTrackerUrl", u + "matomo.php"]);
+        _paq.push(["setSiteId", "1"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.async = true;
+        g.src = u + "matomo.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="sorualani">
+      <h1 id="baslik">Go through the following pages of Library of Congress tests. With each
+        page, the difficulty will increase, helping you gain a stronger
+        understanding of the Library of Congress rules.</h1>
+        <p id="description">
+          Drag the books to arrange them correctly
+        </p>
+        <div id="navigation">
+          <a href="test1.html" class="cta">
+            <span class="hover-underline-animation"> Test 1</span>
+            <svg
+              id="arrow-horizontal"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="10"
+              viewBox="0 0 46 16"
+            >
+              <path
+                id="Path_10"
+                data-name="Path 10"
+                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                transform="translate(30)"
+              ></path>
+            </svg>
+          </a>
+          <a href="test2.html" class="cta">
+            <span class="hover-underline-animation" 
+              >Test 2</span
+            >
+            <svg
+              id="arrow-horizontal"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="10"
+              viewBox="0 0 46 16"
+            >
+              <path
+                id="Path_10"
+                data-name="Path 10"
+                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                transform="translate(30)"
+              ></path>
+              </svg>
+          </a>
+          <a href="#" class="cta" style="padding-right: 0;">
+            <span class="hover-underline-animation" style="color: #d3d3d3"> Test 3</span>
+            
+          </a>
+        </div>
+      <h2>Question 1</h2>
+      <div class="soru">
+        <ul id="sortable" class="sortable">
+          <li>
+            <div class="book">1</div>
+            <div class="etiket">DF<br />376<br />.C65<br />1993</div>
+          </li>
+          <li>
+            <div class="book">2</div>
+            <div class="etiket">DF<br />376<br />.M23<br />1994</div>
+          </li>
+          <li>
+            <div class="book">3</div>
+            <div class="etiket">DF<br />376<br />.H3<br />1966</div>
+          </li>
+          <li>
+            <div class="book">4</div>
+            <div class="etiket">DF<br />375<br />.A98<br />2016</div>
+          </li>
+          <li>
+            <div class="book">5</div>
+            <div class="etiket">DF<br />375<br />.O98<br />2001</div>
+          </li>
+        </ul>
+        <div class="actions">
+          <p id="result1" class="result"></p>
+          <button onclick="checkOrder1()">Check</button>
+        </div>
+      </div>
+
+      <h2>Question 2</h2>
+      <div class="soru">
+        <ul id="sortable2" class="sortable">
+          <li>
+            <div class="book">1</div>
+            <div class="etiket">PA<br />323<br />.G74<br />1981</div>
+          </li>
+          <li>
+            <div class="book">2</div>
+            <div class="etiket">PA<br />258<br />.S56<br />1979</div>
+          </li>
+          <li>
+            <div class="book">3</div>
+            <div class="etiket">PA<br />610<br />.K65<br />1998</div>
+          </li>
+          <li>
+            <div class="book">4</div>
+            <div class="etiket">PA<br />35<br />.C63<br />C5<br />1900</div>
+          </li>
+          <li>
+            <div class="book">5</div>
+            <div class="etiket">PA<br />27<br />.R57<br />1963</div>
+          </li>
+        </ul>
+        <div class="actions">
+          <p id="result2" class="result"></p>
+          <button onclick="checkOrder2()">Check</button>
+        </div>
+      </div>
+
+      <h2>Question 3</h2>
+      <div class="soru">
+        <ul id="sortable3" class="sortable">
+          <li>
+            <div class="book">1</div>
+            <div class="etiket">PC<br />839<br />.E38<br />M97<br />1992</div>
+          </li>
+          <li>
+            <div class="book">2</div>
+            <div class="etiket">PC<br />838<br />.R6<br />1968</div>
+          </li>
+          <li>
+            <div class="book">3</div>
+            <div class="etiket">PC<br />839<br />.G28<br />P3620<br />2003</div>
+          </li>
+          <li>
+            <div class="book">4</div>
+            <div class="etiket">PC<br />839<br />.B56<br />I520<br />2018</div>
+          </li>
+          <li>
+            <div class="book">5</div>
+            <div class="etiket">PC<br />839<br />.B3<br />O6520<br />1989</div>
+          </li>
+        </ul>
+        <div class="actions">
+          <p id="result3" class="result"></p>
+          <button onclick="checkOrder3()">Check</button>
+        </div>
+      </div>
+
+      <h2>Question 4</h2>
+      <div class="soru">
+        <ul id="sortable4" class="sortable">
+          <li>
+            <div class="book">1</div>
+            <div class="etiket">PR<br />151<br />.J5<br />F4<br />1995</div>
+          </li>
+          <li>
+            <div class="book">2</div>
+            <div class="etiket">PK<br />1723<br />.G56<br />F7<br />1932</div>
+          </li>
+          <li>
+            <div class="book">3</div>
+            <div class="etiket">PK<br />1722<br />.T8<br />H69<br />1946</div>
+          </li>
+          <li>
+            <div class="book">4</div>
+            <div class="etiket">PK<br />1723<br />.C58<br />T8<br />1940</div>
+          </li>
+          <li>
+            <div class="book">5</div>
+            <div class="etiket">PK<br />1722<br />.T8<br />G58<br />1941</div>
+          </li>
+        </ul>
+        <div class="actions">
+          <p id="result4" class="result"></p>
+          <button onclick="checkOrder4()">Check</button>
+        </div>
+      </div>
+
+      <h2>Question 5</h2>
+      <div class="soru">
+        <ul id="sortable5" class="sortable">
+          <li>
+            <div class="book">1</div>
+            <div class="etiket">PQ<br />306<br />.C37<br />1967</div>
+          </li>
+          <li>
+            <div class="book">2</div>
+            <div class="etiket">PQ<br />305<br />.T39<br />2017</div>
+          </li>
+          <li>
+            <div class="book">3</div>
+            <div class="etiket">PQ<br />305<br />.S787<br />1998</div>
+          </li>
+          <li>
+            <div class="book">4</div>
+            <div class="etiket">PQ<br />305<br />.S46<br />2006</div>
+          </li>
+          <li>
+            <div class="book">5</div>
+            <div class="etiket">PQ<br />305<br />.S4913<br />1996</div>
+          </li>
+        </ul>
+        <div class="actions">
+          <p id="result5" class="result"></p>
+          <button onclick="checkOrder5()">Check</button>
+        </div>
+      </div>
+
+      <h2>Question 6</h2>
+      <div class="soru">
+        <ul id="sortable6" class="sortable">
+          <li>
+            <div class="book">1</div>
+            <div class="etiket">ND<br />545<br />.V88<br />1963</div>
+          </li>
+          <li>
+            <div class="book">2</div>
+            <div class="etiket">ND<br />546<br />.A78<br />1996</div>
+          </li>
+          <li>
+            <div class="book">3</div>
+            <div class="etiket">ND<br />544<br />.F56<br />1987</div>
+          </li>
+          <li>
+            <div class="book">4</div>
+            <div class="etiket">ND<br />546<br />B848<br />1981</div>
+          </li>
+          <li>
+            <div class="book">5</div>
+            <div class="etiket">ND<br />546<br />F566<br />1990</div>
+          </li>
+        </ul>
+        <div class="actions">
+          <p id="result6" class="result"></p>
+          <button onclick="checkOrder6()">Check</button>
+        </div>
+      </div>
+
+      <h2>Question 7</h2>
+      <div class="soru">
+        <ul id="sortable7" class="sortable">
+          <li>
+            <div class="book">1</div>
+            <div class="etiket">MN<br />540<br />.F53<br />2021<br />V.2</div>
+          </li>
+          <li>
+            <div class="book">2</div>
+            <div class="etiket">MN<br />543<br />.C5<br />A65<br />2019</div>
+          </li>
+          <li>
+            <div class="book">3</div>
+            <div class="etiket">MN<br />540<br />.N66<br />2020</div>
+          </li>
+          <li>
+            <div class="book">4</div>
+            <div class="etiket">MN<br />540<br />.F53<br />2021<br />V.1</div>
+          </li>
+          <li>
+            <div class="book">5</div>
+            <div class="etiket">MN<br />541<br />.G6<br />A87<br />1970</div>
+          </li>
+        </ul>
+        <div class="actions">
+          <p id="result7" class="result"></p>
+          <button onclick="checkOrder7()">Check</button>
+        </div>
+      </div>
+
+      <h2>Question 8</h2>
+      <div class="soru">
+        <ul id="sortable8" class="sortable">
+          <li>
+            <div class="book">1</div>
+            <div class="etiket">GA<br />1431<br />.O517<br />D611<br />1993</div>
+          </li>
+          <li>
+            <div class="book">2</div>
+            <div class="etiket">GA<br />1431<br />.O51<br />D278<br />1993</div>
+          </li>
+          <li>
+            <div class="book">3</div>
+            <div class="etiket">GA<br />1434<br />.C65<br />2001</div>
+          </li>
+          <li>
+            <div class="book">4</div>
+            <div class="etiket">GA<br />1434<br />.R4<br />1965<br />V.2</div>
+          </li>
+          <li>
+            <div class="book">5</div>
+            <div class="etiket">GA<br />1431<br />.O517<br />S252<br />1993</div>
+          </li>
+        </ul>
+        <div class="actions">
+          <p id="result8" class="result"></p>
+          <button onclick="checkOrder8()">Check</button>
+        </div>
+      </div>
+
+      <h2>Question 9</h2>
+      <div class="soru">
+        <ul id="sortable9" class="sortable">
+          <li>
+            <div class="book">1</div>
+            <div class="etiket">Z<br />232<br />.I14<br />S88<br />2018</div>
+          </li>
+          <li>
+            <div class="book">2</div>
+            <div class="etiket">Z<br />232<br />.I14<br />B49<br />2022</div>
+          </li>
+          <li>
+            <div class="book">3</div>
+            <div class="etiket">Z<br />232<br />.G68<br />B78<br />1990</div>
+          </li>
+          <li>
+            <div class="book">4</div>
+            <div class="etiket">Z<br />232<br />.G2956<br />G44<br />1992</div>
+          </li>
+          <li>
+            <div class="book">5</div>
+            <div class="etiket">Z<br />232<br />.F2961<br />G44<br />1992</div>
+          </li>
+        </ul>
+        <div class="actions">
+          <p id="result9" class="result"></p>
+          <button onclick="checkOrder9()">Check</button>
+        </div>
+      </div>
+
+      <h2>Question 10</h2>
+      <div class="soru">
+        <ul id="sortable10" class="sortable">
+          <li>
+            <div class="book">1</div>
+            <div class="etiket">PL<br />248<br />.A33<br />H575<br />1976</div>
+          </li>
+          <li>
+            <div class="book">2</div>
+            <div class="etiket">PL<br />248<br />.A33<br />G8<br />1968</div>
+          </li>
+          <li>
+            <div class="book">3</div>
+            <div class="etiket">PL<br />248<br />.A33<br />G42<br />1979</div>
+          </li>
+          <li>
+            <div class="book">4</div>
+            <div class="etiket">PL<br />248<br />.A33<br />H57<br />1988</div>
+          </li>
+          <li>
+            <div class="book">5</div>
+            <div class="etiket">PL<br />248<br />.A33<br />H55<br />1987</div>
+          </li>
+        </ul>
+        <div class="actions">
+          <p id="result10" class="result"></p>
+          <button onclick="checkOrder10()">Check</button>
+        </div>
+
+        
+      </div>
+      <div id="navigation">
+        <a href="test1.html" class="cta">
+          <span class="hover-underline-animation"> Test 1</span>
+          <svg
+            id="arrow-horizontal"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="10"
+            viewBox="0 0 46 16"
+          >
+            <path
+              id="Path_10"
+              data-name="Path 10"
+              d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+              transform="translate(30)"
+            ></path>
+          </svg>
+        </a>
+        <a href="test2.html" class="cta">
+          <span class="hover-underline-animation" 
+            >Test 2</span
+          >
+          <svg
+            id="arrow-horizontal"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="10"
+            viewBox="0 0 46 16"
+          >
+            <path
+              id="Path_10"
+              data-name="Path 10"
+              d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+              transform="translate(30)"
+            ></path>
+            </svg>
+        </a>
+        <a href="#" class="cta" style="padding-right: 0;">
+          <span class="hover-underline-animation" style="color: #d3d3d3"> Test 3</span>
+          
+        </a>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="./src/script/test3.js"></script>
+  </body>
+</html>
